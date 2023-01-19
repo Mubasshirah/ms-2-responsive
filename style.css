@@ -1,0 +1,394 @@
+.para{
+    width: 300px;
+    border: 1px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.one,.two, .three, .four{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid red;
+    margin-bottom: 10px;
+}
+.one{
+    transform: scale(.5);
+}
+.two{
+    transform: rotate(45deg);
+}
+.three{
+    transform: scale(.5) rotate(45deg);
+}
+.four{
+    transform: translate(500px,100px);
+}
+.onee{
+    width: 200px;
+    height: 200px;
+    background-color: chartreuse;
+    transition: width 1s linear 1s , height 1s linear 1s,transform 1s linear 1s;
+}
+.onee:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+}
+.field{
+ 
+    background-color: chartreuse;
+    
+}
+.bat{
+    transition: transform 2s ease-in ;
+}
+.field:hover .bat{
+    transform: rotate(-30deg);
+    transform-origin: top right;
+}
+.field:hover .ball{
+    transform: translate(300px,-200px);
+}
+.ball{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    left:327px ;
+    transition: transform 1s ease-out 2s;
+}
+.bouncing{
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(127, 255, 212, 0.514);
+    position: relative;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+.bounce-ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(165, 42, 42, 0.479);
+    animation: bouncing  30s linear infinite alternate none;
+    animation-play-state:running;
+    position: absolute;
+    
+}
+.bounce-ball-1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(165, 42, 42, 0.479);
+    animation: bouncing-1  30s linear infinite alternate none;
+    animation-play-state:running;
+    position: absolute;
+}
+.bounce-ball-2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(165, 42, 42, 0.479);
+    animation: bouncing-2  30s linear infinite alternate none;
+    animation-play-state:running;
+    position: absolute;
+}
+.bounce-ball-3{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(165, 42, 42, 0.479);
+    animation: bouncing-3  30s linear infinite alternate none;
+    animation-play-state:running;
+    position: absolute;
+}
+.text{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 200px;
+    font-family:sans-serif;
+    color: rgb(27, 24, 24);
+}
+.text h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+button{
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(137, 43, 226);
+}
+@keyframes bouncing {
+    
+    0%{
+        background-color: rgba(137, 43, 226, 0.473);
+        left: 0;
+        top: 0;
+        transform: scale(.5);
+    }
+    20%{
+        background-color: rgba(43, 153, 226, 0.418);
+        left: 10%;
+        top: 400px;
+        transform: scale(1);
+    }
+    30%{
+        background-color: rgba(221, 14, 135, 0.418);
+        left: 0%;
+        top: 200px;
+        transform: scale(.5);
+    }
+    40%{
+        background-color: rgba(137, 43, 226, 0.418);
+        left: 30%;
+        top: 0;
+        transform: scale(1);
+    }
+    50%{
+        background-color: rgba(43, 183, 226, 0.452);
+        left: 40%;
+        top: 400px;
+        transform: scale(.5);
+    }
+    60%{
+        background-color: rgba(137, 43, 226, 0.486);
+        left: 93%;
+        top: 100px;
+        transform: scale(1);
+    }
+    70%{
+        background-color: rgba(226, 43, 58, 0.445);
+        left: 60%;
+        top: 0;
+        transform: scale(.5);
+    }
+    80%{
+        background-color: rgba(214, 226, 43, 0.404);
+        left: 70%;
+        top: 400px;
+        transform: scale(1);
+    }
+    90%{
+        background-color: rgba(226, 43, 226, 0.452);
+        left: 80%;
+        top: 0;
+        transform: scale(.5);
+    }
+    100%{
+        background-color: rgba(247, 84, 20, 0.397);
+        left: 93%;
+        top: 400px;
+        transform: scale(1);
+    }
+}
+@keyframes bouncing-1 {
+    
+    0%{
+        background-color: rgba(226, 43, 98, 0.473);
+        left: 0;
+        top: 400px;
+        transform: scale(.5);
+    }
+    20%{
+        background-color: rgba(43, 153, 226, 0.418);
+        left: 10%;
+        top: 0px;
+        transform: scale(1);
+    }
+    30%{
+        background-color: rgba(221, 14, 135, 0.418);
+        left: 0%;
+        top: 200px;
+        transform: scale(.5);
+    }
+    40%{
+        background-color: rgba(137, 43, 226, 0.418);
+        left: 30%;
+        top: 0;
+        transform: scale(1);
+    }
+    50%{
+        background-color: rgba(43, 183, 226, 0.452);
+        left: 40%;
+        top: 400px;
+        transform: scale(.5);
+    }
+    60%{
+        background-color: rgba(137, 43, 226, 0.486);
+        left: 93%;
+        top: 100px;
+        transform: scale(1);
+    }
+    70%{
+        background-color: rgba(226, 43, 58, 0.445);
+        left: 60%;
+        top: 0;
+        transform: scale(.5);
+    }
+    80%{
+        background-color: rgba(214, 226, 43, 0.404);
+        left: 70%;
+        top: 400px;
+        transform: scale(1);
+    }
+    90%{
+        background-color: rgba(226, 43, 226, 0.452);
+        left: 80%;
+        top: 0;
+        transform: scale(.5);
+    }
+    100%{
+        background-color: rgba(247, 84, 20, 0.397);
+        left: 93%;
+        top: 400px;
+        transform: scale(1);
+    }
+}
+@keyframes bouncing-2 {
+    
+    0%{
+        background-color: rgba(43, 226, 58, 0.473);
+        left: 50%;
+        top: 0;
+        transform: scale(.5);
+    }
+    20%{
+        background-color: rgba(43, 153, 226, 0.418);
+        left: 10%;
+        top: 400px;
+        transform: scale(1);
+    }
+    30%{
+        background-color: rgba(221, 14, 135, 0.418);
+        left: 0%;
+        top: 200px;
+        transform: scale(.5);
+    }
+    40%{
+        background-color: rgba(137, 43, 226, 0.418);
+        left: 30%;
+        top: 0;
+        transform: scale(1);
+    }
+    50%{
+        background-color: rgba(43, 183, 226, 0.452);
+        left: 40%;
+        top: 400px;
+        transform: scale(.5);
+    }
+    60%{
+        background-color: rgba(137, 43, 226, 0.486);
+        left: 93%;
+        top: 100px;
+        transform: scale(1);
+    }
+    70%{
+        background-color: rgba(226, 43, 58, 0.445);
+        left: 60%;
+        top: 0;
+        transform: scale(.5);
+    }
+    80%{
+        background-color: rgba(214, 226, 43, 0.404);
+        left: 70%;
+        top: 400px;
+        transform: scale(1);
+    }
+    90%{
+        background-color: rgba(226, 43, 226, 0.452);
+        left: 80%;
+        top: 0;
+        transform: scale(.5);
+    }
+    100%{
+        background-color: rgba(247, 84, 20, 0.397);
+        left: 93%;
+        top: 400px;
+        transform: scale(1);
+    }
+}
+@keyframes bouncing-3 {
+    
+    0%{
+        background-color: rgba(43, 55, 226, 0.473);
+        left: 93%;
+        top: 0;
+        transform: scale(.5);
+    }
+    20%{
+        background-color: rgba(43, 153, 226, 0.418);
+        left: 70%;
+        top: 400px;
+        transform: scale(1);
+    }
+    30%{
+        background-color: rgba(221, 14, 135, 0.418);
+        left: 0%;
+        top: 200px;
+        transform: scale(.5);
+    }
+    40%{
+        background-color: rgba(137, 43, 226, 0.418);
+        left: 70%;
+        top: 0;
+        transform: scale(1);
+    }
+    50%{
+        background-color: rgba(43, 183, 226, 0.452);
+        left: 40%;
+        top: 400px;
+        transform: scale(.5);
+    }
+    60%{
+        background-color: rgba(137, 43, 226, 0.486);
+        left: 93%;
+        top: 100px;
+        transform: scale(1);
+    }
+    70%{
+        background-color: rgba(226, 43, 58, 0.445);
+        left: 60%;
+        top: 0;
+        transform: scale(.5);
+    }
+    80%{
+        background-color: rgba(214, 226, 43, 0.404);
+        left: 70%;
+        top: 400px;
+        transform: scale(1);
+    }
+    90%{
+        background-color: rgba(226, 43, 226, 0.452);
+        left: 80%;
+        top: 0;
+        transform: scale(.5);
+    }
+    100%{
+        background-color: rgba(247, 84, 20, 0.397);
+        left: 93%;
+        top: 400px;
+        transform: scale(1);
+    }
+}
+/* css custom property */
+:root{
+    --primary-color:purple;
+    --border:1px solid blue;
+    --secondary-color:violet;
+    --bottom:20px;
+
+}
+
+.box{
+    width: calc(100% - 300px);
+    height: 300px;
+    border: var(--border);
+    background-color: var(--primary-color);
+    margin-bottom: var(--bottom);
+}
